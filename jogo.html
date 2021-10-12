@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagem/nuvem.png" type="image/x-icon">
+    <title>Jogo</title>
+    
+</head>
+<body>
+    <div class="global">
+       
+        <div id="principal">
+            <div id="formulario">
+                <img src="imagem/balao.jpg" alt="">
+            <form id="contato" action="" method="POST"></form>
+            <h1>Vamos jogar </h1>
+            <label for="">Coloque suas resposta</label>
+                <input id="estado" type="text" name="estado" placeholder="Qual seu estado ?">
+                <input id="cidada" type="text"  name="pergunta" placeholder="Qual sua cidade ? ">
+                <input id=" nome" type="text" name="pergunta" placeholder="E como voce se chama ? ">    
+                <input id="time" type="text" name="pergunta" placeholder="Qual time voce torçe ? ">   
+                <input id=" idade" type="text" name="pergunta" placeholder="E quantos anos voce tem ? ">   
+                <input id =enviar type="submit" value="confirmar" onclick="verificar()">
+            </form>
+            
+            </div>  
+        </div>
+        <div id="resultado">
+
+        </div>
+    </div>
+
+    <script>
+
+function verificar(){
+   
+     var estado = document.querySelector(" input#estado")
+     var resultado = document.querySelector( "div#rsultado")
+     var vel  =  text (estado.value)
+     resultado.innerHTML = `<p> Seu estado é  ${resultado} que legal  </p>`
+
+   
+    
+
+     }
+
+    </script>
+
+</body>
+</html>
