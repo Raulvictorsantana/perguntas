@@ -16,8 +16,6 @@ body{
     
 }
 
-
-
 #principal{
     margin-bottom: 5px;
  margin-top: 10px;
@@ -34,7 +32,7 @@ body{
    text-align: center;
 }
 #formulario{
-     margin-top: 40px;
+     margin-top: 80px;
     display: flex;
     flex-direction:column;
     margin-bottom: 88%;
@@ -42,6 +40,8 @@ body{
    
    
 }
+
+
 #formulario label{ color: rgb(239, 246, 247);
    font-weight: 500;
    text-transform: uppercase;
@@ -66,6 +66,7 @@ body{
      background-image: linear-gradient(to left, rgb(35, 35, 134), rgb(64, 40, 153));
  }
 
+ 
 
 #formulario input{
    margin-top: 50px;
@@ -75,14 +76,14 @@ body{
    width: 220px;
    border-radius: 15px;
    border: none;
-   color: rgb(14, 14, 206);
+   color: black;
    font-size: 1rem;
    font-weight: 700;
    text-transform: lowercase;
 
 }
 #formulario input:hover{
-   background-color:rgb(73, 62, 231);
+   background-color:rgb(181, 178, 223);
 
 }
 #enviar:hover{
@@ -101,12 +102,21 @@ body{
     position:absolute;
     margin-left: 400px;
     margin-top: 200px;
-    
-
-
+    display: block;
 
 }
 textarea:focus, input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
 }
+#resultado{
+   font-weight: 600;
+    color: black;
+    position: relative;
+    padding: auto;
+    font-size: 1rem;
+     width: 350px;
+    
+}
+
+ 
