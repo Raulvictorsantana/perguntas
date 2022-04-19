@@ -14,10 +14,16 @@ function resposta(){
         +" e é da cidade de "+ cidade;
         resultado.appendChild(p);
 
+        if(nomes=="" || idade=="" || estado=="" || cidade==""){
+            alert("Preencha todos os campos");
+            p.innerHTML="";
+            
+             }
+            
+
 
     });
- 
    
-}
+  }
 
     window.addEventListener("load", resposta);
