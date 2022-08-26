@@ -18,12 +18,42 @@ function resposta(){
             alert("Preencha todos os campos");
             p.innerHTML="";
             
-             }
-            
-
-
+           }
     });
    
   }
 
-    window.addEventListener("load", resposta);
+const masks = {
+  idade (value) {
+    return value
+      .replace(/\D+/g, '')
+      
+  },
+
+  nome (value) {
+    return value
+      .replace(/\d+/g, '')
+     
+  },
+  estado (value){
+    return value
+    .replace(/\d+/g, "")
+  }, 
+  cidade(value){
+    return value
+    .replace (/\d+/g,"")
+  }
+
+
+}
+
+ document.querySelectorAll('input').forEach($input => {
+  const field = $input.dataset.js
+
+  $input.addEventListener('input', e => {
+    e.target.value = masks[field](e.target.value)
+  }, false)
+});
+
+
+    
